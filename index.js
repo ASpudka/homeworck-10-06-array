@@ -38,17 +38,55 @@ array7.pop();
 // 8.Дан массив [1, 2, 3, 4, 5]. С помощью метода slice запишите в новый
 // элементы [4, 5].
 
-const array8 = [1,2,3,4,5];
-const array9 = array8.slice(0,3);
-const array10 = array8.slice(3);
-console.log(array9);
-console.log(array10);
+// const array8 = [1,2,3,4,5];
+// const array9 = array8.slice(0,3);
+//  const array10 = array8.slice(3);
+// console.log(array9);
+//  console.log(array10);
 
 //splice
 //9.Дан массив [1, 2, 3, 4, 5]. С помощью метода splice преобразуйте массив в [1, 4, 5].
-const array11 = array8.splice(0,1)
-const array12 = array8.splice(2,3)
-console.log(array11);
-console.log(array12);
-const array13 = array11.concat(array12);
-console.log(array13);
+// const array11 = array8.splice(0,1)
+// const array12 = array8.splice(2,3)
+// console.log(array11);
+// console.log(array12);
+// const array13 = array11.concat(array12);
+// console.log(array13);
+
+//10.Дан массив [1, 2, 3, 4, 5]. С помощью метода splice запишите в новый массив элементы [2, 3, 4].
+// const array14 = array8.splice(1,3);
+// console.log(array14);
+
+//11.Дан массив [1, 2, 3, 4, 5]. С помощью метода splice сделайте из негомассив [1, 2, 3, 'a','b', 'c', 4, 5].
+// const array15 = ['a','b','c'];
+// const array16 = array9.concat(array15.concat(array10))
+// console.log(array16 );
+
+//12.Дан массив [1, 2, 3, 4, 5]. С помощью метода splice сделайте из него массив [1, a, b, 2, 3, 4,c, 5, e].
+// array15.push('e');
+
+const getArray17 = () => { 
+  const array17 = array8.slice(0,1)
+  .concat(array15.slice(0,2))
+  .concat(array8.slice(1,4))
+  .concat(array15.slice(2,3))
+  .concat(array8.slice(4))
+  .concat(array15.slice(3));
+return array17;
+}
+// console.log(getArray17());
+
+//sort
+//13.Дан массив [3, 4, 1, 2, 7]. Отсортируйте его.
+const array18 =[3,4,1,2,7];
+console.log(array18.sort());
+
+
+//Object.keys
+//14.Дан объект {js:test, jq: hello, css: world}. Получите массив его ключей.
+const obj ={
+  js:'test',
+  jq: 'hello',
+  css: 'world',
+}
+console.log(Object.keys(obj));
